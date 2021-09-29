@@ -1,5 +1,5 @@
 /* page ho tro benh nhan styel */
-
+section.content .pagin
 .content-page {
     padding-top: 35px;
 }
@@ -275,6 +275,9 @@
     }
     .new-related__item:last-child {
         border-bottom: none;
+    }
+    section.content .pagination {
+        display: none;
     }
 }
 /* responsive */
