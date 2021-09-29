@@ -82,6 +82,17 @@
                         <span></span>
                         <span></span>
                     </div>
+                    <ul class="menu-sp nav__list">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Hỏi đáp miễn phí</a></li>
+                        <li><a href="#">Bác sĩ</a></li>
+                        <li><a href="#">Cơ sở Y tế</a></li>
+                        <li><a href="#">Nhà thuốc</a></li>
+                        <li><a href="#">Bệnh</a></li>
+                        <li><a href="#">Thuốc</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
                     <!-- add more -->
                 </div>
             </div>
@@ -99,9 +110,34 @@
         <div class="content-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-9">
+                    <div class="col-12 col-md-8 col-lg-9">
                         <section class="content">
+                            <div class="only-sp doctor__list-sp">
+                                <img src="assets/image/doctor-sp01.jpg" alt="">
+                                <img src="assets/image/doctor-sp02.jpg" alt="">
+                                <img src="assets/image/doctor-sp03.jpg" alt="">
+                            </div>
+                            <div class="form-question only-sp">
+                                <h3>Tư vấn đột quỵ, tai biến</h3>
+                                <p>GS. TS. BS Nguyễn Văn Thông <br>
+                                    <span> Chủ tịch hội đột quỵ Việt Nam</span>
+                                </p>
+                                <form action="">
+                                    <div class="form__control">
+                                        <input type="text" placeholder="Họ và tên" class="form-control">
+                                        <input type="number" placeholder="SĐT" class="form-control">
+                                    </div>
+                                    <div class="form__control">
+                                        <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Nhập nội dung câu hỏi">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-ct">Gửi câu hỏi</button>
+                                </form>
+                            
+                            </div>
                             <div class="news">
+                                <h3 class="only-sp">Tin tức
+                                </h3>
                                 <div class="new__first">
                                     <a href="">
                                         <img src="assets/image/high-blood-pressure-hypertension-symptoms_thumb@2x.jpg"
@@ -187,7 +223,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pagination d-flex align-items-center justify-content-center">
+                            <button class="only-sp load-more-sp">
+                                <span>Xem thêm</span>
+                                <img src="assets/image/loadmore-red.png" alt="">
+                            </button>
+                            <div class="pagination d-flex align-items-center justify-content-center pc-only">
                                 <a href="">Đầu</a>
                                 <a href="">Trước</a>
                                 <span class="page">1</span>
@@ -203,7 +243,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-12 col-md-4 col-lg-3">
                         <aside>
                             <div class="form-question">
                                 <h3>Tư vấn đột quỵ, tai biến</h3>
@@ -242,7 +282,10 @@
                                     <p>Viêm họng mãn hay tái phát, có nguy cơ bị ung thư vòm họng không?</p>
                                 </a>
                             </div>
-
+                            <button class="only-sp load-more-sp">
+                                <span>Xem thêm</span>
+                                <img src="assets/image/loadmore-red.png" alt="">
+                            </button>
                             <div class="aside-banner mt">
                                 <img src="assets/image/banner_qc.jpg" alt="">
                             </div>
@@ -344,6 +387,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

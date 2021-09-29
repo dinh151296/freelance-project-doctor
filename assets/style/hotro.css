@@ -1,7 +1,7 @@
 /* page ho tro benh nhan styel */
 
 .content-page {
-    margin-top: 35px;
+    padding-top: 35px;
 }
 
 .news {
@@ -154,3 +154,127 @@
     color: #0089D8;
 }
 
+
+/* responsive */
+@media only screen and (max-width:767px) {
+    aside {
+        padding-bottom: 60px;
+    }
+    .content-page {
+        padding-top: 20px;
+    }
+    .doctor__list-sp img {
+        max-width: 330px;
+        margin: 0 auto 16px;
+        border-radius: 10px;
+    }
+    .form-question {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+    .form-question p span {
+        font-size: 14px;
+    }
+    .news {
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    .news > h3 {
+        font-size: 20px;
+        color: #0089D8;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .new__first h4 a {
+        font-size: 18px;
+        display: block;
+    }
+    .new__first img {
+        margin-bottom: 10px;
+    }
+    .new__list {
+        flex-wrap: wrap;
+    }
+    .new__item {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .new__item:last-child {
+        margin-bottom: 0px;
+    }
+    .new__item img {
+        max-width: 161px;
+    }
+    .new__item h4 a {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-left: 16px;
+        font-weight: 400;
+    }
+    .news-related {
+        margin-top: 30px;
+    }
+    .news-related > h3 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .new-related__item .img {
+        max-width: 161px;
+        width: 100%;
+    }
+    .new-item__desc {
+        padding-left: 16px;
+    }
+    .new-item__desc h4 a {
+        font-size: 16px;
+    }
+    .new-item__desc > p {
+        display: none;
+    }
+    aside .form-question, aside .aside-banner {
+        display: none;
+    }
+    .question-related > h3 {
+        color: #0089D8;
+    }
+    .question-related__item img {
+        width: 83px;
+    }
+    .question-related__item p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .question-related {
+        padding: 0px 0px 0px;
+    }
+
+    .load-more-sp {
+        width: 100%;
+        padding: 9px 10px;
+        border-radius: 10px;
+        border: 1px solid #DE0000;
+        margin-top: 20px;
+        background-color: transparent;
+        outline: none;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .load-more-sp span {
+        font-size: 18px;
+        color: #DE0000;
+        padding-right: 15px;
+    }
+
+    .load-more-sp img {
+        margin-top: 5px;
+        width: 8px;
+    }
+    .new-related__item:last-child {
+        border-bottom: none;
+    }
+}
+/* responsive */

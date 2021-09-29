@@ -3,7 +3,7 @@ main {
 }
 
 .content-page {
-    margin-top: 35px;
+    padding-top: 35px;
 }
 
 .block__header {
@@ -48,8 +48,52 @@ main {
    color: #000;
 }
 
-.slider__doctor .item img {
-    margin-bottom: 10px;
+.slider__doctor .item .slider__img {
+   width: 150px;
+   margin: 0 auto 10px;
+}
+
+.slick-prev {
+    left:0px;
+}
+
+.slick-next {
+    right:0px;
+}
+
+.slick-next:before {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    content: "";
+    background-image: url(../image/left-slider.png);
+    width: 20px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slick-prev:before {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    content: "";
+    background-image: url(../image/right-slider.png);
+    width: 20px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slick-prev, .slick-next {
+    height: 40px;
+    width: 40px;
 }
 
 .slider__doctor .item  span {
@@ -63,6 +107,7 @@ main {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 0px;
 }
 
 .question-block {
@@ -170,6 +215,7 @@ button.button__loadmore img {
 .form-control-ct {
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .form-control-ct input {
@@ -180,6 +226,18 @@ button.button__loadmore img {
     font-size: 18px;
     color: #8E8E8E;
     border-radius: 10px;
+}
+
+.form-control-ct textarea {
+    padding: 12px 20px;
+    background-color: #F2F8FF;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #000;
+    border-radius: 10px;
+    flex: 1;
+    height: 50px;
 }
 
 .form-control-ct button[type="submit"] {
@@ -351,3 +409,123 @@ aside {
 }
 
 /* ====aside==== */
+
+@media only screen and (max-width: 1200px) {
+    .block__aside {
+        padding: 15px 10px;
+    }
+}
+
+/* ========responsive======== */
+@media only screen and (max-width:991px) {
+    .header-bt {
+        flex-wrap: wrap;
+    }
+    .input-search input {
+        display: block;
+        width: 100%;
+        max-width: 334px;
+        height: 40px;
+        background-color: #F5F7FA;
+    }
+    .logo {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .input-search img {
+        position: absolute;
+        top: 13px;
+    }
+    .input-search {
+        width: 100%;
+        margin-right: 0px;
+        display: flex;  
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .block__header {
+        flex-wrap: wrap;
+    }
+    .block__header .header__block {
+        display: flex !important;
+        height: 45px;
+    }
+    .header__block span {
+        font-size: 16px;
+    }
+    .block__title {
+        font-size: 20px;
+        max-width: 65%;
+    }
+    .slider__doctor .item .slider__img {
+        width: 90px;
+    }
+    .slick-prev:before, .slick-next::before {
+        width: 14px;
+        height: 24px;
+    }
+    .slider__doctor {
+        padding: 20px;
+    }
+    .slider__doctor .item p {
+        font-size: 16px;
+    }
+    .question-related {
+        padding: 20px;
+    }
+    .question-related .question__name {
+        font-size: 20px;
+    }
+    .question-related .question__add {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    button.button__loadmore {
+        font-size: 16px;
+    }
+    .respondent {
+        width: 100%;
+    }
+    .respondent h4 {
+        font-size: 16px;
+    }
+    .anwer__header {
+        flex-wrap: wrap;
+    }
+    .anwer__header a {
+        margin-bottom: 10px;
+    }
+    .form-control-ct {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form-control-ct textarea {
+        width: 100%;
+        flex: auto;
+        height: 114px;
+        margin-bottom: 16px;
+    }
+    .form-control-ct button[type="submit"] {
+        margin-left: 0px;
+        padding: 8px 20px;
+        width: 100%;
+    }
+    .question-block {
+        margin-bottom: 22px;
+    }
+    .block__aside {
+        padding: 15px 20px 30px;
+    }
+    .block__aside > p {
+        margin-bottom: 0px;
+    }
+    .aside-banner {
+        display: none;
+    }
+    .content-page {
+        padding-top: 20px;
+    }
+}
+/* ========responsive======== */
